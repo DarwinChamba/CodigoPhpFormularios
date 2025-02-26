@@ -37,6 +37,9 @@
             this.result = new System.Windows.Forms.Label();
             this.sumar = new System.Windows.Forms.CheckBox();
             this.restar = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.multiplicar = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +76,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(99, 260);
+            this.btnCalcular.Location = new System.Drawing.Point(22, 260);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 23);
             this.btnCalcular.TabIndex = 4;
@@ -98,12 +101,11 @@
             this.result.Size = new System.Drawing.Size(35, 13);
             this.result.TabIndex = 6;
             this.result.Text = "label4";
-          
             // 
             // sumar
             // 
             this.sumar.AutoSize = true;
-            this.sumar.Location = new System.Drawing.Point(77, 226);
+            this.sumar.Location = new System.Drawing.Point(65, 226);
             this.sumar.Name = "sumar";
             this.sumar.Size = new System.Drawing.Size(32, 17);
             this.sumar.TabIndex = 7;
@@ -113,12 +115,42 @@
             // restar
             // 
             this.restar.AutoSize = true;
-            this.restar.Location = new System.Drawing.Point(115, 226);
+            this.restar.Location = new System.Drawing.Point(103, 226);
             this.restar.Name = "restar";
             this.restar.Size = new System.Drawing.Size(29, 17);
             this.restar.TabIndex = 8;
             this.restar.Text = "-";
             this.restar.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(168, 226);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(29, 17);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.Text = "-";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // multiplicar
+            // 
+            this.multiplicar.AutoSize = true;
+            this.multiplicar.Location = new System.Drawing.Point(130, 226);
+            this.multiplicar.Name = "multiplicar";
+            this.multiplicar.Size = new System.Drawing.Size(32, 17);
+            this.multiplicar.TabIndex = 9;
+            this.multiplicar.Text = "+";
+            this.multiplicar.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(130, 260);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "ir Nueva Pantalla";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -126,6 +158,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(269, 336);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.multiplicar);
             this.Controls.Add(this.restar);
             this.Controls.Add(this.sumar);
             this.Controls.Add(this.result);
@@ -137,6 +172,7 @@
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controles";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -154,6 +190,9 @@
         private System.Windows.Forms.Label result;
         private System.Windows.Forms.CheckBox sumar;
         private System.Windows.Forms.CheckBox restar;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox multiplicar;
+        private System.Windows.Forms.Button button1;
     }
 }
 
